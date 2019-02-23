@@ -28,22 +28,23 @@ public class amazonprueba {
         Searchdropdown.click();
 
         //seleccionar videojuegos en el dropdown
-        //Select videojuegos = new Select(Searchdropdown);
+        Select videojuegos = new Select(Searchdropdown);
         //videojuegos.deselectAll();
-        //videojuegos.selectByValue("search-alias=videogames");
+        videojuegos.selectByVisibleText("Videojuegos");
+        //videojuegos1.click();
 
-            //se busca el textbox de busqueda//
+        //se busca el textbox de busqueda//
           WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
 
         //agregar la busqueda en el textbox//
-        searchBox.sendKeys("resident evil");
-
+        searchBox.sendKeys("resident evil2");
 
          //Clic en el boton buscar
-         WebElement searchButton = driver.findElement(By.id("input"));
-
+         WebElement searchButton = driver.findElement(By.id("//*[@id=nav-search]/form/div[2]/div/input"));
          searchButton.click();
 
+
+         WebElement residentevil2 = driver.findElement(By.name(""));
 
 
     }
