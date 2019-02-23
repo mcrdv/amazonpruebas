@@ -33,7 +33,7 @@ public class amazonprueba {
         videojuegos.selectByVisibleText("Videojuegos");
         //videojuegos1.click();
 
-        //se busca el textbox de busqueda//
+        //se busca el textbox de busqueda///
           WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
 
         //agregar la busqueda en el textbox//
